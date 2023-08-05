@@ -1,0 +1,4 @@
+def display_menu():
+    print("Welcome to the Tourist Guide App")
+    print("1. View all destinations")
+
