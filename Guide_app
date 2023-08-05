@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 def display_menu():
     print("Welcome to the Tourist Guide App")
     print("1. View all destinations")
@@ -20,6 +19,7 @@ def view_destination_details(destinations):
         print(f"Description: {destinations[destination_name]}")
     else:
         print("Destination not found.")
+
 def add_new_destination(destinations):
     destination_name = input("Enter the destination name: ")
     destination_description = input("Enter the destination description: ")
@@ -28,12 +28,13 @@ def add_new_destination(destinations):
 
 def main():
     destinations = {
-        "Kigali": "The City of Love and Lights.",
+        "kigali": "The City of Love and Lights.",
         "Nairobi": "The city that never sleeps.",
         "Bujumbura": "A vibrant metropolis with a rich cultural heritage.",
         "Zanzibar": "Home to the iconic Sydney Opera House and beautiful beaches."
-        }
-while True:
+    }
+
+    while True:
         display_menu()
         choice = input("Enter your choice (1-4): ")
 
@@ -47,7 +48,8 @@ while True:
             print("Thank you for using the Tourist Guide App. Have a great day!")
             break
         else:
-            print("Invalid choice. Please try again")
+            print("Invalid choice. Please try again.")
 
 if __name__ == "__main__":
     main()
+
