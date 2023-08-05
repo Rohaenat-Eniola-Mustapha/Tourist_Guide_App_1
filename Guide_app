@@ -32,6 +32,7 @@ def main():
         "Nairobi": "The city that never sleeps.",
         "Bujumbura": "A vibrant metropolis with a rich cultural heritage.",
         "Zanzibar": "Home to the iconic Sydney Opera House and beautiful beaches."
+        }
 while True:
         display_menu()
         choice = input("Enter your choice (1-4): ")
