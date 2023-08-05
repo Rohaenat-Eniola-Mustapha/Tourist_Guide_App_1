@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
+=======
+
+destinations = view_all_destinations()
+
+>>>>>>> af58e860737497ff66bd5ecdff110c5e5d66c981
 def display_menu():
     print("Welcome to the Tourist Guide App")
     print("1. View all destinations")
