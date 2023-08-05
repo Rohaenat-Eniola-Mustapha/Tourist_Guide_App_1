@@ -20,3 +20,8 @@ def view_destination_details(destinations):
         print(f"Description: {destinations[destination_name]}")
     else:
         print("Destination not found.")
+def add_new_destination(destinations):
+    destination_name = input("Enter the destination name: ")
+    destination_description = input("Enter the destination description: ")
+    destinations[destination_name] = destination_description
+    print(f"{destination_name} has been added to the destinations.")
