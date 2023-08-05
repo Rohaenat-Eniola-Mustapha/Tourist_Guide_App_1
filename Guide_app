@@ -11,3 +11,12 @@ def view_all_destinations(destinations):
     print("All Destinations:")
     for dest in destinations:
         print(dest)
+
+def view_destination_details(destinations):
+    destination_name = input("Enter the destination name: ")
+    if destination_name in destinations:
+        print("Destination Details:")
+        print(f"Name: {destination_name}")
+        print(f"Description: {destinations[destination_name]}")
+    else:
+        print("Destination not found.")
