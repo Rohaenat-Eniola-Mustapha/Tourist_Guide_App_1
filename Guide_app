@@ -25,3 +25,25 @@ def add_new_destination(destinations):
     destination_description = input("Enter the destination description: ")
     destinations[destination_name] = destination_description
     print(f"{destination_name} has been added to the destinations.")
+
+def main():
+    destinations = {
+        "Kigali": "The City of Love and Lights.",
+        "Nairobi": "The city that never sleeps.",
+        "Bujumbura": "A vibrant metropolis with a rich cultural heritage.",
+        "Zanzibar": "Home to the iconic Sydney Opera House and beautiful beaches."
+while True:
+        display_menu()
+        choice = input("Enter your choice (1-4): ")
+
+        if choice == '1':
+            view_all_destinations(destinations)
+        elif choice == '2':
+            view_destination_details(destinations)
+        elif choice == '3':
+            add_new_destination(destinations)
+        elif choice == '4':
+            print("Thank you for using the Tourist Guide App. Have a great day!")
+            break
+        else:
+            print("Invalid choice. Please try again")
